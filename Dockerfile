@@ -25,6 +25,7 @@ RUN pip install -e .
 ENV PYTHONPATH /clawpack:$PYTHONPATH
 ENV CLAW /clawpack
 ENV FC gfortran
+ENV NETCDF4_DIR /usr/local
 
 WORKDIR /home
 RUN mkdir /home/examples
