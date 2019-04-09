@@ -16,6 +16,7 @@ import shutil
 import gzip
 
 import numpy as np
+from geopy.distance import geodesic
 
 from clawpack.geoclaw.surge.storm import Storm
 import clawpack.clawutil as clawutil
