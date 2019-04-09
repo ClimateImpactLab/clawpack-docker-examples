@@ -1,0 +1,16 @@
+2019-04-09 17:04:28,899 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=-57600.0
+2019-04-09 17:04:33,619 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=-36000.0
+2019-04-09 17:04:41,008 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=-14400.0
+2019-04-09 17:07:34,727 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=7200.0
+2019-04-09 17:07:39,966 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=28800.0
+2019-04-09 17:07:45,427 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=50400.0
+2019-04-09 17:07:51,369 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=72000.0
+2019-04-09 17:07:56,355 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=93600.0
+2019-04-09 17:08:01,215 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=115200.0
+2019-04-09 17:08:06,061 pyclaw.fileio INFO CLAW: 344 - Read in solution for time t=136800.0
+2019-04-09 17:08:13,035 matplotlib.animation INFO CLAW: 1146 - Animation.save using <class 'clawpack.visclaw.plotpages.plotclaw_driver.<locals>.myHTMLWriter'>
+2019-04-09 17:08:13,608 matplotlib.animation INFO CLAW: 1146 - Animation.save using <class 'clawpack.visclaw.plotpages.plotclaw_driver.<locals>.myHTMLWriter'>
+2019-04-09 17:08:14,130 matplotlib.animation INFO CLAW: 1146 - Animation.save using <class 'clawpack.visclaw.plotpages.plotclaw_driver.<locals>.myHTMLWriter'>
+2019-04-09 17:08:14,609 matplotlib.animation INFO CLAW: 1146 - Animation.save using <class 'clawpack.visclaw.plotpages.plotclaw_driver.<locals>.myHTMLWriter'>
+2019-04-09 17:08:15,112 matplotlib.animation INFO CLAW: 1146 - Animation.save using <class 'clawpack.visclaw.plotpages.plotclaw_driver.<locals>.myHTMLWriter'>
+2019-04-09 17:08:15,630 matplotlib.animation INFO CLAW: 1146 - Animation.save using <class 'clawpack.visclaw.plotpages.plotclaw_driver.<locals>.myHTMLWriter'>

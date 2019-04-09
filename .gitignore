@@ -1,0 +1,15 @@
+*.nc
+*.tty
+
+xgeoclaw
+
+_output
+_plots
+
+# geoclaw output files
+*.data
+*.storm
+__pycache__
+*.html
+.output
+.plots
