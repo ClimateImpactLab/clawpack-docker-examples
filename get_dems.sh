@@ -7,7 +7,7 @@ do
     if [[ $line != "#"* ]]; then
         if [[ ! -f examples/data/$(basename $line) ]]; then
             echo "downloading $(basename $line)"
-            wget -O examples/data/$(basename $line) $line;
+            curl $line > examples/data/$(basename $line);
         fi;
     fi;
 done < "highres_dems.txt"

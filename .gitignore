@@ -13,3 +13,5 @@ __pycache__
 *.html
 .output
 .plots
+*.log
+*.out
