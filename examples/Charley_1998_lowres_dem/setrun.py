@@ -84,7 +84,7 @@ FIXEDGRIDS = []
 FGMAX_FILES = []
 CHECKPOINT_STYLE = 0
 TOPOFILES = [
-    [3, 1, 5, -57600.0, 136800.0, '/home/examples/data/base_dem.tty']]
+    [3, 1, 5, -57600.0, 136800.0, '/home/examples/data/charlie_1998_base_dem.tty']]
 LOWEST_RES = .25 # degree
 T0 = -57600.0
 TFINAL = 136800.0

@@ -84,7 +84,7 @@ FIXEDGRIDS = []
 FGMAX_FILES = []
 CHECKPOINT_STYLE = 0
 TOPOFILES = [
-    [3, 1, 5, -57600.0, 136800.0, '/home/examples/data/base_dem.tty'],
+    [3, 1, 5, -57600.0, 136800.0, '/home/examples/data/charlie_1998_base_dem.tty'],
     # [4, 1, 5, -57600.0, 136800.0, '/home/examples/data/tampa_bay_13_navd88_2014.nc'],
     # [4, 1, 5, -57600.0, 136800.0, '/home/examples/data/crm_vol1_0_1.nc'],
     # [4, 1, 5, -57600.0, 136800.0, '/home/examples/data/crm_vol1_0_2.nc'],
