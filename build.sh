@@ -6,7 +6,7 @@ docker build \
     --cache-from climateimpactlab/geoclaw-example:latest \
     .
 
-docker push climateimpactlab/geoclaw-example:latest
+# docker push climateimpactlab/geoclaw-example:latest
 
 docker run -i --rm \
     --name "geoclaw-local" \
