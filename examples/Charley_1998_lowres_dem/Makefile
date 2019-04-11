@@ -20,7 +20,11 @@ SETPLOT_FILE = setplot.py      # File containing function to set plots
 PLOTDIR = _plots               # Directory for plots
 
 # Environment variable FC should be set to fortran compiler, e.g. gfortran
-FFLAGS ?=
+
+FFLAGS += -DNETCDF -lnetcdff -I$(NETCDF4_DIR)/include -L$(NETCDF4_DIR)$ \
+	-Ofast -W -Wall -fbounds-check -fcheck=all -pedantic-errors \
+	-fbacktrace -ffpe-trap=invalid,zero,overflow,underflow -g \
+	# -Wunderflow
 
 # ---------------------------------
 # package sources for this program:
@@ -31,7 +35,7 @@ include $(GEOLIB)/Makefile.geoclaw
 
 # ---------------------------------------
 # package sources specifically to exclude
-# (i.e. if a custom replacement source 
+# (i.e. if a custom replacement source
 #  under a different name is provided)
 # ---------------------------------------
 
