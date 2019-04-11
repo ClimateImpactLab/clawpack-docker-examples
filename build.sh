@@ -2,8 +2,18 @@
 
 cd clawpack
 git submodule init
-git submodule update --recursive -j 6
+git submodule update
+
+for submod in amrclaw classic clawutil geoclaw pyclaw riemann visclaw; do
+    cd $submod
+    git submodule init
+    git submodule update
+    cd ..
+done
+
 cd ..
+
+bash get_dems.sh
 
 docker pull climateimpactlab/geoclaw-example:latest
 docker build \
