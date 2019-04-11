@@ -67,16 +67,16 @@ def licricize_rmw(t, storm):
     return 63273. - 868.3*vmax_az + 1070. * lat
 
 
-def set_missing_storm_rad_to_1000(t, storm):
+def set_missing_storm_rad_to_1000km(t, storm):
         """
-        Sets the default maximum storm radius to 1000m
+        Sets the default maximum storm radius to 1000km
 
         Holland 1980 parameterization does not decay to 0, so
         the geoclaw implementation (in
         ``geoclaw/src/2d/shallow/surge/model_storm_module.f90``)
         constrains windspeeds to being within 2 * the storm radius
         """
-        return 1000
+        return 1000000
 
 
 TRACK_FORMAT = 'IBTrACS'
@@ -103,7 +103,7 @@ RESTART = False
 RS_FILE = ''
 VERBOSITY = 0
 RMW_FUNC = licricize_rmw
-STORM_RAD_FUNC = set_missing_storm_rad_to_1000
+STORM_RAD_FUNC = set_missing_storm_rad_to_1000km
 PLOTS = ['surface', 'friction', 'pressure', 'gauge_vals', 'gauge_locs', 'wind', 'speed']
 
 
