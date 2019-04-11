@@ -15,12 +15,6 @@ RUN pip install \
         "nose==1.3.7" \
         "geopy>=1.19.0";
 
-RUN git clone --branch=master --depth 100 --quiet git://github.com/ClimateImpactLab/clawpack
-WORKDIR /clawpack
-RUN git submodule init
-RUN git submodule update -j 6
-
-RUN pip install -e .
 
 ENV PYTHONPATH /clawpack:$PYTHONPATH
 ENV CLAW /clawpack
@@ -30,4 +24,8 @@ ENV NETCDF4_DIR /usr/local
 WORKDIR /home
 RUN mkdir /home/examples
 
+COPY prepare.sh /usr/bin/prepare.sh
+RUN chmod +x /usr/bin/prepare.sh
+
+ENTRYPOINT ["tini", "--", "/usr/bin/prepare.sh"]
 CMD "/bin/bash"

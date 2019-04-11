@@ -1,0 +1,4 @@
+
+[submodule "clawpack"]
+	path = clawpack
+	url = git@github.com:ClimateImpactLab/clawpack
