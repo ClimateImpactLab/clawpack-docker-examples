@@ -20,9 +20,12 @@ SETPLOT_FILE = setplot.py      # File containing function to set plots
 PLOTDIR = _plots               # Directory for plots
 
 # Environment variable FC should be set to fortran compiler, e.g. gfortran
+
 FFLAGS += -DNETCDF -lnetcdff -I$(NETCDF4_DIR)/include -L$(NETCDF4_DIR)$ \
 	-Ofast -W -Wall -fbounds-check -fcheck=all -pedantic-errors \
-	-fbacktrace -ffpe-trap=invalid,zero,overflow,underflow -g \
+	-fbacktrace -g \
+	-ffpe-trap=invalid,zero,overflow \
+	# -ffpe-trap=invalid,zero,overflow,underflow \
 	# -Wunderflow
 
 # ---------------------------------
